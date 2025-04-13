@@ -432,8 +432,9 @@
         .service-img {
             height: 200px;
             min-height: 200px !important;
-            background-size: cover !important;
+            background-size: contain !important; /* Change from 'cover' to 'contain' */
             background-position: center !important;
+            background-repeat: no-repeat !important; /* Add this to prevent repeating */
             display: block !important;
             width: 100% !important;
             visibility: visible !important;
@@ -844,7 +845,8 @@
             <div class="services-container">
                 <!-- Service 1 -->
                 <div class="service-card fade-in">
-                    <div class="service-img" style="background-image: url('images/service1.jpg'); background-size: cover; background-position: center; height: 200px; width: 100%; display: block;">
+                    <div class="service-img" style="background-image: url('images/service1.jpg'); background-size: contain; background-position: center; background-repeat: no-repeat; height: 200px; width: 100%; display: block;"
+
                         <!-- Image with explicit inline styles for maximum compatibility -->
                     </div>
                     <div class="service-content">
